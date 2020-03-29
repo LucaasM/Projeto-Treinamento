@@ -26,6 +26,7 @@ module.exports = {
 
         return res.json(casos)
     },
+    // Rota de criar os casos
     async create(req, res) {
         const { title, description, value } = req.body;
         const ong_id = req.headers.authorization; // Pegando o ID da ong logada ao sistema
